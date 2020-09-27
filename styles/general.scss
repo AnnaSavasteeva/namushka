@@ -1,0 +1,64 @@
+@import 'normalize';
+@import 'variables-mixins';
+@import 'product';
+
+
+
+@font-face {
+    src: url('../fonts/Exo2.0-Thin.otf');
+    font-family: 'Exo';
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background: url('../images/Pattern.png') center / auto repeat border-box;
+    font-family: $trebuchet;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.page-wrapper {
+    min-height: inherit;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 5e-05) 49.88%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.page-content-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-content-wrapper {
+    max-width: 1280px;
+    padding: 36px 0;
+}
+
+.page-title {
+    margin-bottom: 25px;
+    padding: 0 4px;
+    font-family: $exo;
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 300;
+    text-align: center;
+    color: $textLight;
+    text-shadow: 0px 1px 1px #000000;
+}
+
+#all-products-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}

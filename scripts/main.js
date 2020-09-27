@@ -1,6 +1,6 @@
-let card_list = document.querySelector('#main_content');
+let all_cards = document.querySelector('#all-products-container');
 
 for (let i = 0; i < cards.length; i++) {
-    let card = render_card(cards[i]);
-    card_list.appendChild(card);
+    let card = render_product(cards[i]);
+    all_cards.appendChild(card);
 }

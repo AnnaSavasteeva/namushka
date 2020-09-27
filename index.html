@@ -5,25 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Нямушка</title>
-    <link rel="stylesheet" href="styles/mainStyles.css">
+    <link rel="stylesheet" href="styles/general.css">
 </head>
 
 <body>
-    <div class="overlay">
-        <div class="content_wrapper">
+    <div class="page-wrapper page-content-align">
+
+        <div class="page-content-wrapper">
 
             <header>
-                <h1>Ты сегодня покормил кота?</h1>
+                <h1 class="page-title">Ты сегодня покормил кота?</h1>
             </header>
 
-            <section id="main_content">
+            <section id="all-products-container">
 
             </section>
 
         </div>
+
     </div>
 
-    <script src="scripts/functions.js"></script>
+    <script src="scripts/product_hover.js"></script>
+    <script src="scripts/product_click.js"></script>
+    <script src="scripts/render_product.js"></script>
     <script src="scripts/data_base.js"></script>
     <script src="scripts/main.js"></script>
 </body>

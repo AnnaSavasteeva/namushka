@@ -1,0 +1,40 @@
+// Text
+$exo: 'Exo';
+$trebuchet: 'Trebuchet MS';
+$textLight: #fff;
+$textNormal: #666666;
+$textDark: #000;
+
+@mixin text_weight_color($weight: bold, $color: $textDark) {
+    font-weight: $weight;
+    color: $color;
+}
+
+
+// Colors
+$elements: #1698D9;
+$elements_hover: #2EA8E6;
+$elements_selected: #D91667;
+$elements_selected_hover: #E52E7A;
+$elements_not_available: #B3B3B3;
+
+
+// Borders
+$border-width: 4px;
+$border-radius: 12px;
+
+@mixin product_border() {
+    border: $border-width solid $elements;
+}
+
+// Bevel calculation
+$cathetus: 43px;
+$hypotenuse: 57px; // $hypotenuse - $border-width: 61px - 4px
+
+
+
+// Elements details
+$cursor: pointer;
+$cursor_not_available: default;
+
+$product-weight-box: 80px;
